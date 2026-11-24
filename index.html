@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shree Sainath Enterprises | Aluminium Sales &amp; Services, Dombivli East</title>
+<meta name="description" content="Aluminium sliding windows and doors, grills, partitions and false ceilings in Dombivli East. Call 9323944210 for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --char:#23272b; --saffron:#e8801a; --marigold:#f2c230; --alu:#c9ced3; --paper:#f6f5f2; --ink:#1b1e21; --sign:#d9345a;
+  --head:'Bricolage Grotesque','Arial Black',sans-serif; --body:'Mukta','Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:18px;line-height:1.55;color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.1;letter-spacing:-.01em}
+
+/* header */
+header{background:var(--char);color:#fff;position:sticky;top:0;z-index:5}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;max-width:1080px;margin:0 auto}
+.logo{font-family:var(--head);font-weight:800;font-size:1.15rem;text-decoration:none;color:var(--marigold)}
+.logo small{display:block;font-family:var(--body);font-weight:400;font-size:.72rem;color:var(--alu)}
+nav{display:flex;gap:18px;align-items:center}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--marigold)}
+.call{background:var(--saffron);color:#fff;padding:8px 14px;border-radius:6px}
+@media(max-width:640px){nav .hide{display:none}}
+
+/* hero with sliding window */
+.hero{background:var(--char);color:#fff;padding:48px 0 64px;border-bottom:8px solid var(--saffron)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center}
+.hero .nama{color:var(--marigold);font-size:.95rem;margin-bottom:10px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);font-weight:800}
+.hero p{margin:16px 0 24px;color:#d8dcdf;max-width:34ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 1rem var(--body);padding:12px 20px;border-radius:6px;text-decoration:none}
+.btn.main{background:var(--saffron);color:#fff}
+.btn.alt{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px var(--alu)}
+.btn:hover{filter:brightness(1.08)}
+.win{position:relative;aspect-ratio:4/3;border:12px solid var(--alu);border-radius:4px;background:linear-gradient(180deg,#9fd0e8,#e6f3f9 70%);overflow:hidden;box-shadow:0 0 0 3px #8e949a}
+.pane{position:absolute;top:0;bottom:0;width:52%;border:7px solid var(--alu);background:rgba(255,255,255,.28)}
+.pane::after{content:"";position:absolute;top:45%;width:6px;height:22%;background:#6d737a;border-radius:3px}
+.pane.l{left:0;animation:slideL 2.4s .5s cubic-bezier(.6,0,.2,1) both}
+.pane.l::after{right:8px}
+.pane.r{right:0;animation:slideR 2.4s .5s cubic-bezier(.6,0,.2,1) both}
+.pane.r::after{left:8px}
+@keyframes slideL{from{transform:translateX(0)}to{transform:translateX(-32%)}}
+@keyframes slideR{from{transform:translateX(0)}to{transform:translateX(0)}}
+.win .sky{position:absolute;inset:0;background:radial-gradient(circle at 75% 25%,#fff7c8 0 8%,transparent 9%)}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.win{max-width:420px}}
+
+/* sections */
+section{padding:60px 0}
+section h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;margin-bottom:8px}
+.lead{color:#4b5157;margin-bottom:32px;max-width:52ch}
+
+/* products */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #dcdfe2;border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.card .art{height:150px;background:var(--char);display:flex;align-items:center;justify-content:center}
+.card .art svg{width:150px;height:110px}
+.card .txt{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.25rem}
+.card p{color:#4b5157;font-size:.98rem;flex:1}
+.card button{align-self:flex-start;background:none;border:2px solid var(--char);color:var(--char);font:600 .95rem var(--body);padding:7px 14px;border-radius:6px;cursor:pointer}
+.card button:hover{background:var(--char);color:#fff}
+.alu{stroke:var(--alu);fill:none;stroke-width:4}
+.glass{fill:rgba(159,208,232,.35)}
+.acc{stroke:var(--marigold);fill:none;stroke-width:4}
+
+/* contact */
+.contact{background:#fff;border-top:1px solid #dcdfe2}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+@media(max-width:760px){.cols{grid-template-columns:1fr}}
+.info p{margin-bottom:14px}
+.info b{display:block;font-family:var(--head);font-size:1.05rem}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.95rem;display:grid;gap:4px}
+input,select,textarea{font:inherit;padding:11px 12px;border:2px solid #b8bec4;border-radius:6px;background:var(--paper);width:100%}
+input:focus,select:focus,textarea:focus{border-color:var(--saffron);outline:none}
+textarea{min-height:120px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+#status{min-height:1.5em;font-weight:600}
+#status.ok{color:#1a7a3a}
+#status.err{color:#b3261e}
+footer{background:var(--char);color:var(--alu);padding:24px 0;font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+.wa{position:fixed;right:16px;bottom:16px;background:#1fa855;color:#fff;font-weight:700;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+@media(prefers-reduced-motion:reduce){.pane.l{animation:none;transform:translateX(-32%)}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="logo" href="#top">Shree Sainath Enterprises<small>Aluminium Sales &amp; Services</small></a>
+    <nav aria-label="Main">
+      <a class="hide" href="#products">Products</a>
+      <a class="hide" href="#contact">Get a quote</a>
+      <a class="call" href="tel:+919323944210">Call 9323944210</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="nama">॥ श्री साईनाथाय नमः ॥</p>
+        <h1>Aluminium windows, grills and partitions, made to fit your home.</h1>
+        <p>Sliding windows and doors, safety grills, gates, false ceilings and more. Serving Dombivli East.</p>
+        <div class="btns">
+          <a class="btn main" href="#contact">Get a free quote</a>
+          <a class="btn alt" href="tel:+919323944210">Call now</a>
+        </div>
+      </div>
+      <div class="win" role="img" aria-label="Illustration of an aluminium sliding window opening">
+        <div class="sky"></div>
+        <div class="pane l"></div>
+        <div class="pane r"></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="products">
+    <div class="wrap">
+      <h2>What we make and fit</h2>
+      <p class="lead">Tap “Ask for a quote” on any item and we will get back to you with a price.</p>
+      <div class="grid">
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="glass" x="10" y="10" width="130" height="90"/><rect class="alu" x="10" y="10" width="130" height="90"/><rect class="alu" x="10" y="10" width="68" height="90"/><rect class="alu" x="72" y="10" width="68" height="90"/></svg></div>
+          <div class="txt"><h3>Aluminium sliding windows</h3><p>Smooth-gliding frames in glass or mesh, built to your window size.</p>
+          <button type="button" data-item="Aluminium sliding windows">Ask for a quote</button></div>
+        </article>
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="glass" x="25" y="5" width="100" height="100"/><rect class="alu" x="25" y="5" width="100" height="100"/><line class="alu" x1="75" y1="5" x2="75" y2="105"/><line class="acc" x1="68" y1="50" x2="68" y2="66"/><line class="acc" x1="82" y1="50" x2="82" y2="66"/></svg></div>
+          <div class="txt"><h3>Sliding doors and partitions</h3><p>Balcony doors, bathroom doors and room dividers in aluminium and glass.</p>
+          <button type="button" data-item="Sliding doors and partitions">Ask for a quote</button></div>
+        </article>
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="alu" x="10" y="15" width="130" height="80"/><g class="alu" style="stroke-width:3"><line x1="30" y1="15" x2="30" y2="95"/><line x1="50" y1="15" x2="50" y2="95"/><line x1="70" y1="15" x2="70" y2="95"/><line x1="90" y1="15" x2="90" y2="95"/><line x1="110" y1="15" x2="110" y2="95"/><line x1="10" y1="55" x2="140" y2="55"/></g></svg></div>
+          <div class="txt"><h3>Window and balcony grills</h3><p>Strong safety grills in steel and aluminium, in plain or decorative patterns.</p>
+          <button type="button" data-item="Window and balcony grills">Ask for a quote</button></div>
+        </article>
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="alu" x="10" y="20" width="130" height="75"/><rect class="acc" x="22" y="32" width="24" height="24"/><rect class="acc" x="104" y="32" width="24" height="24"/><g class="alu" style="stroke-width:3"><line x1="58" y1="20" x2="58" y2="95"/><line x1="75" y1="20" x2="75" y2="95"/><line x1="92" y1="20" x2="92" y2="95"/></g></svg></div>
+          <div class="txt"><h3>Main gates</h3><p>Sliding and swing gates for homes and societies, fitted and finished on site.</p>
+          <button type="button" data-item="Main gates">Ask for a quote</button></div>
+        </article>
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="alu" x="10" y="10" width="130" height="90"/><rect class="acc" x="30" y="30" width="90" height="50"/><circle cx="75" cy="55" r="7" fill="#f2c230"/></svg></div>
+          <div class="txt"><h3>False ceilings</h3><p>Clean ceiling designs with lighting cut-outs for living rooms and bedrooms.</p>
+          <button type="button" data-item="False ceilings">Ask for a quote</button></div>
+        </article>
+
+        <article class="card">
+          <div class="art"><svg viewBox="0 0 150 110" aria-hidden="true"><rect class="alu" x="10" y="10" width="130" height="90"/><line class="alu" x1="75" y1="10" x2="75" y2="100"/><line class="acc" x1="10" y1="60" x2="75" y2="60"/><line class="acc" x1="75" y1="45" x2="140" y2="45"/></svg></div>
+          <div class="txt"><h3>Kitchens and wardrobes</h3><p>Aluminium-frame kitchen cabinets and wardrobes made for your room.</p>
+          <button type="button" data-item="Kitchens and wardrobes">Ask for a quote</button></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap cols">
+      <div class="info">
+        <h2>Tell us what you need</h2>
+        <p class="lead">Send your details and we will call you back with a quote.</p>
+        <p><b>Phone</b><a href="tel:+919323944210">9323944210</a></p>
+        <p><b>Visit the shop</b>Shop No. 4, Jay Malhar Bild CHS,<br>Tilak College Road, Azde Gaon,<br>Dombivli (East)</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Shree+Sainath+Enterprises+Azde+Gaon+Dombivli+East" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      </div>
+
+      <!-- STEP 2: replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+      <form id="quote" action="https://formspree.io/f/mvkavrbo" method="POST">
+        <label>Your name<input name="name" type="text" required autocomplete="name"></label>
+        <label>Phone number<input name="phone" type="tel" required inputmode="tel" autocomplete="tel" pattern="[0-9+\s\-]{10,15}" title="Enter a 10-digit mobile number"></label>
+        <label>Email (optional)<input name="email" type="email" autocomplete="email"></label>
+        <label>What do you need?
+          <select name="product" id="product">
+            <option>Aluminium sliding windows</option>
+            <option>Sliding doors and partitions</option>
+            <option>Window and balcony grills</option>
+            <option>Main gates</option>
+            <option>False ceilings</option>
+            <option>Kitchens and wardrobes</option>
+            <option>Something else</option>
+          </select>
+        </label>
+        <label>Your request<textarea name="message" required placeholder="Size, number of windows, area, and anything else we should know"></textarea></label>
+        <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn main" type="submit">Send request</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Shree Sainath Enterprises</span>
+    <span>Aluminium Sales &amp; Services, Dombivli East</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919323944210?text=Hello%2C%20I%20need%20a%20quote" target="_blank" rel="noopener">WhatsApp us</a>
+
+<script>
+// "Ask for a quote" buttons fill the product field and jump to the form
+document.querySelectorAll('.card button').forEach(function(b){
+  b.addEventListener('click', function(){
+    document.getElementById('product').value = b.dataset.item;
+    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+    document.querySelector('#quote input[name=name]').focus({preventScroll:true});
+  });
+});
+
+// Send the form without leaving the page
+var form = document.getElementById('quote');
+var status = document.getElementById('status');
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  status.className = ''; status.textContent = 'Sending…';
+  fetch(form.action, {method:'POST', body:new FormData(form), headers:{'Accept':'application/json'}})
+    .then(function(r){
+      if(r.ok){ form.reset(); status.className='ok'; status.textContent='Request sent. We will call you soon.'; }
+      else { throw new Error('bad response'); }
+    })
+    .catch(function(){
+      status.className='err';
+      status.textContent='Could not send. Please call 9323944210 or use the WhatsApp button.';
+    });
+});
+</script>
+</body>
+</html>
